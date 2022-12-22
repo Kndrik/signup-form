@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.card-container {
+    background-image: url("images/joel-de-vriend-CneKHByEzsk-unsplash.jpg");
+    height: 100vh;
+    width: 30%;
+    background-size: cover;
+}
+
+.content {
+    width: auto;
+    height: 100vh;
+    background-color: rgb(241, 241, 241);
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.card-body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.534);
+    height: 150px;
+    padding: 10px 0;
+    margin-top: 25vh;
+}
+
+.card-logo {
+    height: 140px;
+    width: auto;
+}
+
+.card-text {
+    color: white;
+    font-family: 'Passion One', cursive;
+    font-size: 4em;
+}
+
+h1 {
+    font-weight: 500;
+    color:rgb(49, 73, 109);
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 20px 60px;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 30px 0;
+}
+
+form ul li {
+    width: 49%;
+    display: inline-block;
+    flex-flow: column;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 80%;
+}
+
+.description {
+    margin: 0 60px 40px;
+    font-weight: 500;
+    font-size: 26px;
+    width: 750px
+}
+
+.italic {
+    font-weight: 500;
+    font-style: italic;
+}
+
+li label {
+    color: rgb(49, 73, 109);
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+li input {
+    border: 2px solid #E5E7EB;
+    height: 32px;
+    border-radius: 6px;
+}
+
+.input-container {
+    display:flex;
+    flex-flow: column;
+}
