@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="card-container">
@@ -19,7 +20,7 @@
     <div class="content">
         <p class="description">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <span class="italic">now</span> to get started.<br><br>You <span class="italic">know</span> you want to.</p>
         <div class="form-container">
-            <form action="post">
+            <form onsubmit="return checkForValidation()">
                 <div class="panel">
                     <h1 class="title">Let's do this!</h1>
                     <p class="required-text">Required fields are followed by <span aria-label="required">*</span>.</p>
@@ -51,14 +52,14 @@
                         <li>
                             <div class="input-container">
                                 <label for="password">PASSWORD<span aria-label="required">*</span></label>
-                                <input type="password" name="password" id="password" required>
-                                <div class="error"></div>
+                                <input class="error" type="password" name="password" id="password" required>
+                                <div class="error-text"></div>
                             </div>
                         </li>
                         <li>
                             <div class="input-container">
                                 <label for="password-confirm">CONFIRM PASSWORD<span aria-label="required">*</span></label>
-                                <input type="password" name="password-confirm" id="password-confirm" required>
+                                <input class="error" type="password" name="password-confirm" id="password-confirm" required>
                             </div>
                         </li>
                     </ul>

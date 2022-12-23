@@ -94,12 +94,12 @@ input:focus {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-input:invalid + .error {
+.error + .error-text {
     color: red;
     font-size: 14px;
 }
 
-input:invalid + .error::before {
+.error + .error-text::before {
     content: '* Passwords do not match';
 }
 
