@@ -21,6 +21,7 @@ function checkForValidation() {
         alert("Oops, password do not match!");
         return false;
     } else {
+        alert("You successfully registered");
         return true;
     }
 }
