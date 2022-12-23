@@ -136,11 +136,12 @@ li input {
 }
 
 button,
-form p {
+form .login {
     margin-left: 60px;
 }
 
 button {
+    display: inline-block;
     width: 270px;
     height: 55px;
     border-radius: 8px;
@@ -153,11 +154,23 @@ button {
     margin-bottom: 30px;
 }
 
-form p {
+button:hover {
+    background-color: #6d7c62;
+    cursor: pointer;
+}
+
+form .login {
     font-size: 18px;
 }
 
+form .required-text {
+    margin-block-end: 0;
+    font-size: 14px;
+    color:rgb(82, 101, 129);
+}
+
 a {
+    text-decoration: none;
     color:#596D48;
     font-weight: bold;
 }
